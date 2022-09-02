@@ -9,7 +9,7 @@ const Felicitaciones = (props) => {
 
   return (
     <div>
-      <h3 className="text-center">{props.nombre}, ¡Excelente! Ganaste 100 puntos</h3>
+      <h3 className="text-center">{props.nombre}, ¡Excelente! Ganaste 300 puntos</h3>
       <br></br>
       <div className="text-center">
         {" "}

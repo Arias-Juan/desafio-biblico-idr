@@ -35,7 +35,11 @@ const Nivel1A = (props) => {
       final()
     }
     else{
-     setError(true) 
+     setError(true)
+         // Restar puntos en localstore
+    const puntos = localStorage.getItem("puntos");
+    const resta = parseInt(puntos) - 50;
+    localStorage.setItem("puntos", JSON.parse(resta));
     }
   }
 
@@ -51,7 +55,7 @@ const Nivel1A = (props) => {
   return (
     <div>
       {error ? (
-        <Alert variant="warning" className="text-center">¡Ups! Lee nuevamente el pasaje mencionado y contesta.</Alert>
+        <Alert variant="warning" className="text-center">¡Ups! Lee nuevamente el pasaje mencionado y contesta. -50 Puntos.</Alert>
       ) : null}
 
             <h1 className="text-center">Lee:</h1>

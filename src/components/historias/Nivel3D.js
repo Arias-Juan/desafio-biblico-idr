@@ -51,7 +51,7 @@ const Nivel1A = (props) => {
   const final = () => {
     // Cargar puntos en localstore
     const puntos = localStorage.getItem("puntos");
-    const suma = parseInt(puntos) + 100;
+    const suma = parseInt(puntos) + 300;
     localStorage.setItem("puntos", JSON.parse(suma));
     // Redirección
     window.location.replace('/empezar/3/felicitaciones');
